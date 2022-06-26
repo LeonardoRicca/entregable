@@ -51,6 +51,7 @@ ul{
 li{
     display: inline-block;
     padding: 0.1875rem;
+    
 }
 
 li>a{
@@ -58,7 +59,18 @@ li>a{
     list-style-type: none;
     color: #1a1a1a;
     font-weight: 700;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
 }
+
+li>a:hover{
+    background-size: 100% 2px;
+}
+
+
 
 .img-h{
     grid-area: img-1;
@@ -163,11 +175,11 @@ fieldset{
 /* =================== EMPIEZA QUÉ HACEMOS ==================== */
 
 .frase1__texto{
-    text-align: center;
-    font-size: 1.3rem;
-    max-width: 650px;
-    margin: 2rem auto;
+    text-align: justify;
+    font-size: 1rem;
+    margin: 2rem 1.2rem;
     line-height: 1.8rem;
+    max-width: 100vw;
 }
 
 /* =================== TERMINA QUÉ HACEMOS ==================== */
@@ -175,8 +187,8 @@ fieldset{
 
 /* =================== EMPIEZA SERVICIOS ==================== */
 
-.frase1{
-    font-size: 1rem;
+.frase1__titulo{
+    font-size: 2rem;
     text-align: center;
     padding: 0.725rem;
     margin-top: 0.625rem;
@@ -239,6 +251,10 @@ fieldset{
         padding: 1.2rem;
     }
     
+    li:hover{
+        transform: scale(1.11);
+    }
+
     article{
         margin: auto;
     }
@@ -262,6 +278,20 @@ fieldset{
     label{
         margin-left: 0.125rem;
     }
+
+    .a-rrss:hover{
+        transform: scale(1.11);
+    }
+
+    /* QUIÉNES SOMOS-QUÉ HACEMOS */
+    .frase1__texto{
+        text-align: center;
+        font-size: 1.3rem;
+        max-width: 650px;
+        margin: 2rem auto;
+        line-height: 1.8rem;
+    }
+    /* QUIÉNES SOMOS-QUÉ HACEMOS */
 }
 
 @media (min-width: 1024px) {
@@ -293,6 +323,7 @@ fieldset{
         position: relative;
         left: 10.3125rem;
     }
+
 }   
 
 
