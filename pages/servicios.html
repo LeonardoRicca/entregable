@@ -5,25 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios | Derecho para Todos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../style-grid.css" />
 </head>
 <body>
-
-<!-- ================================= NAVBAR ==================================== -->
-    <nav class="botonera">
-        <a href="../index.html">
-            <img src="../img/icon.svg" alt="logo de derecho para todos" />
+    <!-- ================ NAVBAR BS =================== -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top botonera">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/icon.svg" alt="logo Derecho para Todos">
           </a>
-        <div class="botonera__links">
-          <ul>
-            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-            <li><a href="que-hacemos.html">Qué hacemos</a></li>
-            <li><a href="../index.html#contacto">Contacto</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-          </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" aria-current="page" href="quienes-somos.html">Quiénes Somos</a>
+              <a class="nav-link" href="que-hacemos.html">Qué Hacemos</a>
+              <a class="nav-link" href="../index.html#contacto">Contacto</a>
+              <a class="nav-link " href="servicios.html" >Servicios</a>
+              <a class="nav-link " href="galeria.html" >Galería</a>
+            </div>
+          </div>
         </div>
-    </nav>
+      </nav>
+      <!-- ================ TERMINA NAVBAR BS =================== -->
+
+        <!-- ================ EMPIEZA BREADCRUMB =================== -->
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb m-3">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Servicios</li>
+            </ol>
+        </nav>
+      <!-- ================ TERMINA BREADCRUMB =================== -->
+      <main>
 
 <!-- ================================= HEADER ==================================== -->
     <header>
@@ -33,90 +49,122 @@
     </header>
 
 <!-- ================================= MAIN ==================================== -->
-    <section class="deal__container">
-        <img class="deal__img" src="../img/sharing.webp" alt="">
-        <div class="deal__texto">
-            <h2 class="deal__titulo">Servicios sobre inversión</h2>
-            <p class="deal__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorem commodi fugit consequuntur at ipsum, nam dicta facilis nobis ad vel sunt. Odio voluptas asperiores, consequuntur libero modi facere corrupti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ipsa expedita quasi, harum delectus repellendus? Repudiandae quisquam amet provident at ipsum, velit explicabo quibusdam animi cupiditate dolor numquam rem voluptatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ipsa expedita quasi, harum delectus repellendus? Repudiandae quisquam amet provident at ipsum, velit explicabo quibusdam animi cupiditate dolor numquam rem voluptatibus.</p>
+
+<main>
+    <div class="row my-3 px-5 justify-content-center">
+        
+        <!-- ============================= EMPIEZA CARD I  ================================ --> 
+        <div class="card m-2 col-sm-12 col-md-5 col-lg-4">
+            <img src="../img/multitasking.webp" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+            <h5 class="card-title">Servicios de inversión</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero alias deleniti fugiat sit dolores, autem enim molestias voluptatibus consequuntur. Excepturi, in. Corrupti suscipit deserunt repudiandae alias aperiam totam eius impedit!</p>
+            <a href="#" class="btn btn-primary">Saber más</a>
+            </div>
         </div>
+    <!-- ============================= TERMINA CARD I  ================================ --> 
+
+    <!-- ============================= EMPIEZA CARD II  ================================ --> 
+        <div class="card m-2 col-sm-12 col-md-5 col-lg-4 md-m-auto">
+            <img src="../img/grilla/coffe.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+            <h5 class="card-title">Servicios de asesoramiento</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero alias deleniti fugiat sit dolores, autem enim molestias voluptatibus consequuntur. Excepturi, in. Corrupti suscipit deserunt repudiandae alias aperiam totam eius impedit!</p>
+            <a href="#" class="btn btn-primary">Saber más</a>
+            </div>
+        </div>
+    <!-- ============================= TERMINA CARD II  ================================ --> 
+    <!-- ============================= EMPIEZA CARD III  ================================ --> 
+        <div class="card m-2 col-sm-12 col-md-5 col-lg-4">
+            <img src="../img/grilla/elements.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+            <h5 class="card-title">Servicios de distribución</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero alias deleniti fugiat sit dolores, autem enim molestias voluptatibus consequuntur. Excepturi, in. Corrupti suscipit deserunt repudiandae alias aperiam totam eius impedit!</p>
+            <a href="#" class="btn btn-primary">Saber más</a>
+            </div>
+        </div>
+        
+    </div>
+    <!-- ============================= TERMINA CARD III  ================================ --> 
+
+
+    <section class="my-5 px-5" >
+        <h3 class="text-center mt-6 mb-5">Detalle</h3>
+        <table class="table">
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+                <th>Cantidad Mensual</th>
+            </tr>
+            <tr>
+                <td>Asesoría</td>
+                <td>$599</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Asesoría Plus</td>
+                <td>$1099</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Asesoría Integral</td>
+                <td>$1599</td>
+                <td>∞</td>
+            </tr>
+        </table>
     </section>
 
-<section>
-    <table border="1px" cellpadding="5px" cellspacing="5px">
-        <tr>
-            <th>Servicio</th>
-            <th>Precio</th>
-            <th>Cantidad Mensual</th>
-        </tr>
-        <tr>
-            <td>Asesoría</td>
-            <td>$599</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Asesoría Plus</td>
-            <td>$1099</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>Asesoría Integral</td>
-            <td>$1599</td>
-            <td>∞</td>
-        </tr>
-    </table>
- </section>
-</main>    
 
-<section>
-<form>
-<!-- ============================= EMPIEZA FORMULARIO ================================ --> 
-    <fieldset>
-        <legend> Detalle del pedido</legend>
-            <label for="codigo-civil">Código Civil</label>
-            <input type="checkbox" id="codigo-civil" value="codigo-civil">
-            <br>
-            <label for="codigo-comercio">Código de Comercio</label>
-            <input type="checkbox" id="codigo-comercio" value="codigo-comercio"> 
-            <br>
-            <label for="codigo-tributario">Código Tributario</label>
-            <input type="checkbox" id="codigo-tributario" value="codigo-tributario">          
-    </fieldset>
+    <!-- ============================= EMPIEZA FORMULARIO ================================ --> 
+    <form action="">
+        <fieldset>
+            <legend class="text-center mt-3 mb-3"> Detalle del pedido</legend>
+                <label for="codigo-civil">Código Civil</label>
+                <input type="checkbox" id="codigo-civil" value="codigo-civil">
+                <br>
+                <label for="codigo-comercio">Código de Comercio</label>
+                <input type="checkbox" id="codigo-comercio" value="codigo-comercio"> 
+                <br>
+                <label for="codigo-tributario">Código Tributario</label>
+                <input type="checkbox" id="codigo-tributario" value="codigo-tributario">          
+        </fieldset>
 
-    <fieldset>
-        <legend>Opciones de envío</legend>
-            <label for="local">Retiro en el local</label>
-            <input type="radio" id="local" name="envio" value="local">
+        <fieldset>
+            <legend class="text-center mt-3 mb-3">Opciones de envío</legend>
+                <label for="local">Retiro en el local</label>
+                <input type="radio" id="local" name="envio" value="local">
+                <br>
+                <label for="domicilio">Entrega a domicilio</label>
+                <input type="radio" id="domicilio" name="envio" value="domicilio">
+                <br>
+                <label for="departamentos">Seleccione el departamento</label>
+                <select name="departamentos" id="departamentos">Departamentos
+                    <option value="Colonia">Colonia</option>
+                    <option value="Maldonado">Maldonado</option>
+                    <option value="Montevideo">Montevideo</option>
+                    <option value="Salto">Salto</option>
+                </select>
+        </fieldset>
+        
+        <div class="text-center mt-6 mb-5">    
+            <label for="mensaje">¿Desea realizar alguna aclaración?</label>
             <br>
-            <label for="domicilio">Entrega a domicilio</label>
-            <input type="radio" id="domicilio" name="envio" value="domicilio">
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
             <br>
-            <label for="departamentos">Seleccione el departamento</label>
-            <select name="departamentos" id="departamentos">Departamentos
-                <option value="Colonia">Colonia</option>
-                <option value="Maldonado">Maldonado</option>
-                <option value="Montevideo">Montevideo</option>
-                <option value="Salto">Salto</option>
-            </select>
-    </fieldset>
-    
-    <div>    
-        <label for="mensaje">¿Desea realizar alguna aclaración?</label>
-        <br>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-        <br>
-        <input type="reset" value="Cancelar">
-        <input type="submit" value="Enviar">
-    </div>
-<!-- ============================= TERMINA FORMULARIO ================================ -->  
-</form>
+            
+            <input class="btn btn-secondary btn-sm" type="reset" value="Cancelar">
+            <input class="btn btn-dark btn-sm" type="submit" value="Enviar">
+        </div>
+    </form>
+    <!-- ============================= TERMINA FORMULARIO ================================ -->
 </section>
 
-<section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13091.346124116366!2d-56.203829463999355!3d-34.88545098446281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f801857ddb9e9%3A0xd9eea6d1b4fb1296!2sParaguay%202431%2C%2011800%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1653601430702!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
+    <section class="text-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13091.346124116366!2d-56.203829463999355!3d-34.88545098446281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f801857ddb9e9%3A0xd9eea6d1b4fb1296!2sParaguay%202431%2C%2011800%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1653601430702!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
 
-
+</main>
 
 
 <!-- ================================= FOOTER ==================================== -->
@@ -134,5 +182,6 @@
           </a>
         </div>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -6,10 +6,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-/*body{
-    background-image: url(img/background.svg);
-}*/
 
+.navbar{
+    box-shadow: 0 0 3px 3px #1a1a1a;
+}
 .grid-container{
     display: grid;
     grid-template-columns: repeat(auto, minmax(240px, 1fr));
@@ -155,7 +155,7 @@ fieldset{
 
 .footer{
     grid-area: pie;
-    background-color: #fff;
+    background-color: #f8f9fa;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -253,6 +253,25 @@ fieldset{
     
     li:hover{
         transform: scale(1.11);
+    }
+
+    .nav-link{
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+
+    .nav-link:hover{
+        transform: scale(1.04);
+        color: #1a1a1a;
+        font-weight: 700;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 2px;
+
     }
 
     article{
