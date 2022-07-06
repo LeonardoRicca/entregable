@@ -192,6 +192,7 @@ fieldset{
     text-align: center;
     padding: 0.725rem;
     margin-top: 0.625rem;
+    animation: opacidad 2s ease .3s;
 }
 
 /* =================== TERMINA SERVICIOS ==================== */
@@ -310,6 +311,12 @@ fieldset{
         margin: 2rem auto;
         line-height: 1.8rem;
     }
+
+    .carousel-item{
+        height: 65vh;
+        background-size: cover;
+        background: no-repeat center center scroll;
+    }
     /* QUIÉNES SOMOS-QUÉ HACEMOS */
 }
 
@@ -348,4 +355,17 @@ fieldset{
 
 
 /* =================== TERMINA INDEX @MEDIA QUERIES==================== */
+
+/* =================== ANIMACIONES ==================== */
+@keyframes opacidad {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
 

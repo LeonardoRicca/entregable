@@ -1,0 +1,19 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonardoRicca/entregable.git"
+  },
+  "author": "Leo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonardoRicca/entregable/issues"
+  },
+  "homepage": "https://github.com/LeonardoRicca/entregable#readme"
+}
