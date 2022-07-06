@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+$mainFont: 'Roboto', sans-serif;
+$secondaryFont: 'Nunito', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//encabezados
+
+h1{
+    font-family: $mainFont;
+    font-size: $textXl;
+}
+
+h2{
+    font-family: $mainFont;
+    font-size: $textLg;
+}
+
+p{
+    font-family: $mainFont;
+    font-size: $textMd;
+}
