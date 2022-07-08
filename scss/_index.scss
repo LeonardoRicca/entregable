@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+$mainFont: 'Roboto', sans-serif;
+$secondaryFont: 'Nunito', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    box-shadow: 0 0 3px 3px #1a1a1a;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(240px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "nav"
+    "img-1"
+    "noticias"
+    "img-2"
+    "newsletter"
+    "pie";
+    gap: 1.5rem;
+    grid-auto-flow: dense;
+    @media (min-width: 768px) {
+        grid-template-areas: 
+        "nav nav"
+        "noticias noticias"
+        "img-1 img-2"
+        "newsletter newsletter"
+        "pie pie";
+    }
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr 25%;
+        grid-template-areas: 
+        "nav nav nav"
+        "noticias noticias img-1"
+        "noticias noticias img-2"
+        "newsletter newsletter newsletter"
+        "pie pie pie"; 
+    }
+     
+}
+a {
+    img{
+    max-height: 3.3rem;
+    margin-top: .5rem;
+    }
+}
+.botonera{
+    background-color: $white;
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 1px;
+    z-index: 10;
+    box-shadow: 0 0 3px 3px #1a1a1a;
+    @media (min-width: 768px) {
+        .botonera{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }    
+    }
+}
+ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+li{
+    display: inline-block;
+    padding: 0.1875rem;
+    @media (min-width: 768px){
+        padding: 1.2rem;
+        &:hover{
+            transform: scale(1.11);  
+        }
+    }
+    a{
+        text-decoration: none;
+        list-style-type: none;
+        color: #1a1a1a;
+        font-weight: 700;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+        &:hover{
+            background-size: 100% 2px;  
+        }
+        
+    }   
+}
+.img-h{
+    grid-area: img-1;
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.noticias__contenedor{
+    grid-area: noticias;
+}
+
+.noticias__caja{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.noticias__titulo{
+    text-align: center;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    padding: 0.625rem;
+    position: relative;
+    max-width: 512px;
+    margin: 0.625rem auto;
+    &::before{
+        content: "";
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        width: 50%;
+        border-bottom: 1px solid $thirdColor;
+    }
+    
+}
+.carta-noticia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+}
+
+.img-2{
+    grid-area: img-2;
+    background-color: blanchedalmond;
+
+}
+
+.form{
+grid-area: newsletter;
+}
+
+
+.field-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+legend{
+    margin: 1em auto;
+    text-align: center;
+    p{
+      text-align: center;  
+    }
+    
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+}
+.footer{
+    grid-area: pie;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.625rem;
+}
+.a-rrss{
+    max-height: 50px;
+    text-align: center;
+}
+@keyframes opacidad {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}

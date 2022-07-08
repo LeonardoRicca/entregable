@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio | Derecho para Todos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style-grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="../img/icon.svg">
   </head>
   <body>
 <!-- ================ NAVBAR BS =================== -->
  
   <div class="grid-container">
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top botonera">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top botonera">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="img/icon.svg" alt="logo Derecho para Todos">
@@ -155,23 +155,21 @@
       <!-- ================ NEWSLETTER ================= -->
       <div class="form">
         <form action="envio.php" id="contacto">
+          <div class="field-wrap">
             <fieldset>
               <legend>Newsletter</legend>
               <p>Suscribite a nuestra Newsletter</p>
               <div class="inputs">
                 <label for="name">Nombre</label>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Ingrese su nombre aquí"
-                />
+                <input class="m-3" type="text" id="name" placeholder="Ingrese su nombre aquí"/>
                 <label for="email">Correo electrónico</label>
-                <input type="email" id="email" placeholder="email@algo.algo" />
-                
+                <input class="m-3" type="email" id="email" placeholder="email@algo.algo" />
+                <input class="btn btn-sm btn-outline-dark my-3" type="submit" value="Suscribirse!" />
               </div>
-              <input type="submit" value="Suscribirse!" />
+              
             </fieldset>
-          </form>
+          </div>
+        </form>
       </div>
 
       <!-- ================ FOOTER ================= -->

@@ -169,8 +169,7 @@ fieldset{
 }
 
 /* =================== TERMINA INDEX ==================== */
-/* =================== EMPIEZA QUIÉNES SOMOS ==================== */
-/* =================== TERMINA QUIÉNES SOMOS ==================== */
+
 
 /* =================== EMPIEZA QUÉ HACEMOS ==================== */
 
@@ -255,7 +254,7 @@ fieldset{
     li:hover{
         transform: scale(1.11);
     }
-
+/* ================ HASTA ACÁ ================= */
     .nav-link{
         background-image: linear-gradient(currentColor, currentColor);
         background-position: 0% 100%;

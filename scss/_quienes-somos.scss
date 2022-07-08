@@ -1,0 +1,22 @@
+.frase1__titulo{
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.725rem;
+    margin-top: 0.625rem;
+    animation: opacidad 2s ease .3s;
+    
+}
+
+.frase1__texto{
+    text-align: center;
+    font-size: $textMd;
+    max-width: 650px;
+    margin: 2rem auto;
+    line-height: 1.8rem;
+}
+
+.carousel-item{
+    height: 65vh;
+    background-size: cover;
+    background: no-repeat center center scroll;
+}
