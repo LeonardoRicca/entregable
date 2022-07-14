@@ -11,7 +11,35 @@ $textMd:1.3em;
 $textLg:1.6em;
 $textXl:3em;
 
-//weight
+//mixins
 
-$w-bold: 700;
-$w-normal: 400;
+@mixin titulo ($size,$line-heigt,$color){
+    font-size: $size;
+    line-height: $line-heigt;
+    color: $color
+}
+
+@mixin d-flex-row($justify,$align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin cover-img{
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    };
+}
+
+//paleta
+
+$fontWeight:(
+    'thin': 100,
+    'light': 300,
+    'normal': 400,
+    'medium': 500,
+    'bold': 700,
+    'heavy': 900
+);
