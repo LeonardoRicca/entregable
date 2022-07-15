@@ -1,0 +1,5 @@
+Mejoras en SEO
+
+Inclusión de texto alternativo en fotos, dentro del atributo alt, a efectos de mejorar la accesibilidad y la experiencia de usuario, en los casos en que no cargue la imágen.
+
+Dentro del <head> se añadieron <meta>: description, author y keywords a cada una de las páginas que componen el sitio.

@@ -105,8 +105,17 @@ li{
 img{
     max-width: 100%;
     height: 100%;
-    @include cover-img();
+    @extend .img;
+    object-fit: cover;
+    
 }
+
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .noticias__contenedor{
     grid-area: noticias;
@@ -162,11 +171,8 @@ grid-area: newsletter;
 
 
 .field-wrap{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 0.625rem;
+    @include d-flex-col(center,center);
     @media (min-width: 768px) {
         flex-direction: row;
         justify-content: space-around;
@@ -186,15 +192,6 @@ legend{
     justify-content: center;
     align-items: center;
     padding: 0.625rem;
-}
-.footer{
-    grid-area: pie;
-    background-color: #f8f9fa;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0.625rem;
 }
 .a-rrss{
     max-height: 50px;

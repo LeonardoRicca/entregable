@@ -21,16 +21,16 @@ $textXl:3em;
 
 @mixin d-flex-row($justify,$align){
     display: flex;
+    flex-wrap: wrap;
     justify-content: $justify;
     align-items: $align;
 }
 
-@mixin cover-img{
-    background: {
-        size: cover;
-        repeat: no-repeat;
-        position: center;
-    };
+@mixin d-flex-col($align,$justify){
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+    justify-content: $justify;
 }
 
 //paleta
